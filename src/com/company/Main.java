@@ -4,11 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        final String secretKey = "ssshhhhhhhhhhh!!!!";
+        String originalString = "Sulu123";
 
-        String originalString = "Jonathan123";
-        String encryptedString = AES.encrypt(originalString, secretKey) ;
-        String decryptedString = AES.decrypt(encryptedString, secretKey) ;
+        String encryptedString = AES.encrypt(originalString) ;
+        String decryptedString = AES.decrypt(encryptedString) ;
 
         System.out.println(originalString);
         System.out.println(encryptedString);
