@@ -11,9 +11,7 @@ import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 
 class AESFileDecryption {
-     static String Decrypt(String des_file, String file_format) throws Exception {
-
-        String password = "javapapers";
+     static void Decrypt(String des_file, String file_format, String password) throws Exception {
 
         // reading the salt
         // user should have secure mechanism to transfer the
@@ -57,6 +55,6 @@ class AESFileDecryption {
         fos.flush();
         fos.close();
 
-        return "File Decrypted";
+        System.out.println("File Decrypted");
     }
 }

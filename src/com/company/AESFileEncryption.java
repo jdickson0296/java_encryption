@@ -14,16 +14,13 @@ import javax.crypto.spec.SecretKeySpec;
 
 class AESFileEncryption {
 
-    static String Encrypt(String filename) throws Exception {
+    static void Encrypt(String filename, String password) throws Exception {
 
         // file to be encrypted
         FileInputStream inFile = new FileInputStream(filename);
 
         // encrypted file
         FileOutputStream outFile = new FileOutputStream("encryptedfile.des");
-
-        // password to encrypt the file
-        String password = "javapapers";
 
         // password, iv and salt should be transferred to the other end
         // in a secure manner
@@ -78,8 +75,7 @@ class AESFileEncryption {
         outFile.flush();
         outFile.close();
 
-
-        return "File Encrypted";
+        System.out.println("File Encrypted");
 
     }
 
