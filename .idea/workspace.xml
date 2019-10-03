@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b9c2aa4e-1edb-4712-8cca-9139bc909a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decrypted_file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/encryptedfile.des" beforeDir="false" afterPath="$PROJECT_DIR$/encryptedfile.des" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iv.enc" beforeDir="false" afterPath="$PROJECT_DIR$/iv.enc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java_encryption/com/company/AESFileDecryption.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_encryption/com/company/AESFileDecryption.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java_encryption/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_encryption/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salt.enc" beforeDir="false" afterPath="$PROJECT_DIR$/salt.enc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/AESFileDecryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AESFileDecryption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>

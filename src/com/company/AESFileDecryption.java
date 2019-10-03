@@ -1,5 +1,6 @@
 package com.company;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.security.spec.KeySpec;
@@ -22,12 +23,19 @@ class AESFileDecryption {
            byte[] salt = new byte[8];
            saltFis.read(salt);
            saltFis.close();
+//           // delete enc file
+//           new File("salt.enc").delete();
+
+
 
            // reading the iv
            FileInputStream ivFis = new FileInputStream("iv.enc");
            byte[] iv = new byte[16];
            ivFis.read(iv);
            ivFis.close();
+//           // delete enc file
+//           new File("iv.enc").delete();
+
 
            SecretKeyFactory factory = SecretKeyFactory
                    .getInstance("PBKDF2WithHmacSHA1");
@@ -56,6 +64,9 @@ class AESFileDecryption {
            fis.close();
            fos.flush();
            fos.close();
+
+//           // delete encrypted file
+//           new File("encryptedfile.des").delete();
 
            System.out.println("File Decrypted");
         }
